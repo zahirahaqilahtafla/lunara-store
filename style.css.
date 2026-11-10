@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff8fb;
+  color: #392733;
+}
+
+header {
+  background: white;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: #d86f97;
+}
+
+nav a {
+  text-decoration: none;
+  color: #392733;
+  margin: 10px;
+}
+
+.hero {
+  text-align: center;
+  padding: 90px 20px;
+  background: #f9dfeb;
+}
+
+.hero h2 {
+  font-size: 38px;
+}
+
+.btn {
+  display: inline-block;
+  background: #dc789b;
+  color: white;
+  padding: 14px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+section {
+  padding: 40px 8%;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 15px #f0d5e2;
+}
+
+.gambar {
+  background: #fbe7f0;
+  padding: 35px;
+  font-size: 60px;
+  border-radius: 12px;
+}
+
+button {
+  background: #dc789b;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+footer {
+  background: #f8dfeb;
+  padding: 30px;
+  text-align: center;
+}
+
+@media(max-width:600px) {
+  .products {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  .hero h2 {
+    font-size: 27px;
+  }
+}
