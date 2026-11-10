@@ -41,7 +41,7 @@ function checkout() {
 
   pesan += \nTotal: Rp${total};
 
-  let nomor = "6281234567890";
+  let nomor = "87762411534";
 
   window.open(
     "https://wa.me/" + nomor +
