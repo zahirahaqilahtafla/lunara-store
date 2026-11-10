@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lunara Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🎀 Lunara</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#produk">Produk</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h2>Your Daily Essentials, Prettier ♡</h2>
+  <p>Belanja lebih mudah dengan kualitas terbaik!</p>
+  <a href="#produk" class="btn">Belanja Sekarang</a>
+</section>
+
+<section id="produk">
+  <h2>Produk Terlaris ✨</h2>
+  <div class="products">
+    <div class="card">
+      <div class="gambar">👜</div>
+      <h3>Bow Handbag</h3>
+      <p>Rp120.000</p>
+      <button onclick="addCart('Bow Handbag',120000)">
+        + Keranjang
+      </button>
+    </div>
+
+    <div class="card">
+      <div class="gambar">🎀</div>
+      <h3>Ribbon Hair Clip</h3>
+      <p>Rp25.000</p>
+      <button onclick="addCart('Ribbon Hair Clip',25000)">
+        + Keranjang
+      </button>
+    </div>
+
+    <div class="card">
+      <div class="gambar">🥤</div>
+      <h3>Pastel Tumbler</h3>
+      <p>Rp81.000</p>
+      <button onclick="addCart('Pastel Tumbler',81000)">
+        + Keranjang
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="keranjang">
+  <h2>Keranjang Belanja 🛍️</h2>
+  <div id="cart"></div>
+  <h3 id="total">Total: Rp0</h3>
+  <button onclick="checkout()">Checkout WhatsApp</button>
+</section>
+
+<footer id="kontak">
+  <h2>Lunara ♡</h2>
+  <p>Shop Smarter, Live Prettier.</p>
+  <p>Instagram | TikTok | WhatsApp</p>
+  <p>© 2026 Lunara Store</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
